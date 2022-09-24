@@ -1,0 +1,47 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "geo-utils",
+  "title": "Geo Utils",
+  "description": "Geographic utilities",
+  "icon": "command-icon.png",
+  "author": "darrinholst",
+  "license": "MIT",
+  "prettier": {
+    "singleQuote": true
+  },
+  "commands": [
+    {
+      "name": "wkt-to-geojson",
+      "title": "WKT to GeoJSON",
+      "description": "Converts WKT to GeoJSON",
+      "mode": "view"
+    },
+    {
+      "name": "geojson-to-wkt",
+      "title": "GeoJSON to WKT",
+      "description": "Converts GeoJSON to WKT",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.39.3",
+    "@terraformer/wkt": "^2.1.2",
+    "@turf/truncate": "^6.5.0",
+    "json-stringify-pretty-compact": "^4.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "lint": "ray lint",
+    "publish": "ray publish"
+  }
+}
