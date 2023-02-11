@@ -16,7 +16,7 @@ export default function Command() {
         title="WKT"
         onChange={async (value) => {
           try {
-            const converted = stringify(truncate(wktToGeoJSON(value)));
+            const converted = stringify(wktToGeoJSON(value));
             setGeojson(converted);
             await Clipboard.copy(converted);
             showSuccess('GeoJSON copied to clipboard');

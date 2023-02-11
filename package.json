@@ -11,6 +11,12 @@
   },
   "commands": [
     {
+      "name": "geojson",
+      "title": "GeoJSON",
+      "description": "GeoJSON goodies",
+      "mode": "view"
+    },
+    {
       "name": "wkt-to-geojson",
       "title": "WKT to GeoJSON",
       "description": "Converts WKT to GeoJSON",
